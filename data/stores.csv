@@ -1,0 +1,9 @@
+store_id,store_name,city,state,region
+S001,Melbourne Central,Melbourne,VIC,South
+S002,Sydney Central,Sydney,NSW,East
+S003,Brisbane Central,Brisbane,QLD,North
+S004,Perth Central,Perth,WA,West
+S005,Adelaide Central,Adelaide,SA,South
+S006,Geelong Store,Geelong,VIC,South
+S007,Parramatta Store,Parramatta,NSW,East
+S008,Gold Coast Store,Gold Coast,QLD,North
