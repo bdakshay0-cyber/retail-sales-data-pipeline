@@ -1,0 +1,11 @@
+customer_id,customer_name,gender,age,city,state
+C001,John Smith,M,34,Melbourne,VIC
+C002,Sarah Jones,F,29,Sydney,NSW
+C003,David Lee,M,42,Brisbane,QLD
+C004,Emma Brown,F,31,Melbourne,VIC
+C005,Michael Wilson,M,38,Perth,WA
+C006,Olivia Taylor,F,27,Adelaide,SA
+C007,Daniel Martin,M,45,Melbourne,VIC
+C008,Sophia Anderson,F,33,Sydney,NSW
+C009,James Thomas,M,51,Brisbane,QLD
+C010,Charlotte Jackson,F,26,Perth,WA
