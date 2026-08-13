@@ -1,0 +1,16 @@
+product_id,product_name,category,subcategory,unit_price
+P001,Laptop,Electronics,Computers,1200
+P002,Mouse,Electronics,Accessories,35
+P003,Keyboard,Electronics,Accessories,80
+P004,Office Chair,Furniture,Chairs,250
+P005,Desk,Furniture,Desks,450
+P006,Monitor,Electronics,Displays,350
+P007,Headphones,Electronics,Audio,120
+P008,Webcam,Electronics,Accessories,90
+P009,Printer,Electronics,Printers,220
+P010,Notebook,Stationery,Paper,8
+P011,Pen,Stationery,Writing,3
+P012,Desk Lamp,Furniture,Lighting,65
+P013,Tablet,Electronics,Tablets,600
+P014,Smartphone,Electronics,Mobile,950
+P015,USB Cable,Electronics,Accessories,15
