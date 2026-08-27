@@ -39,3 +39,46 @@ def load_to_bronze(source_file, destination_path):
     )
 
     return bronze_df
+
+
+# ============================================================
+# Load Customers
+# ============================================================
+
+customers_bronze = load_to_bronze(
+    f"{RAW_BASE_PATH}/customers.csv",
+    f"{BRONZE_BASE_PATH}/customers"
+)
+
+
+# ============================================================
+# Load Products
+# ============================================================
+
+products_bronze = load_to_bronze(
+    f"{RAW_BASE_PATH}/products.csv",
+    f"{BRONZE_BASE_PATH}/products"
+)
+
+
+# ============================================================
+# Load Stores
+# ============================================================
+
+stores_bronze = load_to_bronze(
+    f"{RAW_BASE_PATH}/stores.csv",
+    f"{BRONZE_BASE_PATH}/stores"
+)
+
+
+# ============================================================
+# Load Sales
+# ============================================================
+
+sales_bronze = load_to_bronze(
+    f"{RAW_BASE_PATH}/sales.csv",
+    f"{BRONZE_BASE_PATH}/sales"
+)
+
+
+
