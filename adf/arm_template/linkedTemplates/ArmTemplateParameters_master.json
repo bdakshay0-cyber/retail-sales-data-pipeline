@@ -1,0 +1,30 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "factoryName": {
+            "value": "retail-sales-adf-akshay"
+        },
+        "LS_AzureSQL_Retail_password": {
+            "value": ""
+        },
+        "LS_AzureSQL_Retail_properties_typeProperties_server": {
+            "value": "retail-sql-server.database.windows.net"
+        },
+        "LS_AzureSQL_Retail_properties_typeProperties_database": {
+            "value": "RetailSalesDB"
+        },
+        "LS_AzureSQL_Retail_properties_typeProperties_userName": {
+            "value": "sqladmin"
+        },
+        "LS_ADLS_Retail_properties_typeProperties_url": {
+            "value": "https://retailsalesstorage2026ak.dfs.core.windows.net/"
+        },
+        "containerUri": {
+            "value": ""
+        },
+        "containerSasToken": {
+            "value": ""
+        }
+    }
+}
