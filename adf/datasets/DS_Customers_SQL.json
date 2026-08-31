@@ -1,0 +1,49 @@
+{
+    "name": "DS_Customers_SQL",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "LS_AzureSQL_Retail",
+            "type": "LinkedServiceReference"
+        },
+        "parameters": {
+            "p_TableName": {
+                "type": "string",
+                "defaultValue": "@dataset().p_TableName"
+            }
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "customer_id",
+                "type": "varchar"
+            },
+            {
+                "name": "customer_name",
+                "type": "varchar"
+            },
+            {
+                "name": "gender",
+                "type": "varchar"
+            },
+            {
+                "name": "age",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "city",
+                "type": "varchar"
+            },
+            {
+                "name": "state",
+                "type": "varchar"
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "Customers"
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,45 @@
+{
+    "name": "DS_Products_SQL",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "LS_AzureSQL_Retail",
+            "type": "LinkedServiceReference"
+        },
+        "parameters": {
+            "p_TableName": {
+                "type": "string"
+            }
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "product_id",
+                "type": "varchar"
+            },
+            {
+                "name": "product_name",
+                "type": "varchar"
+            },
+            {
+                "name": "category",
+                "type": "varchar"
+            },
+            {
+                "name": "subcategory",
+                "type": "varchar"
+            },
+            {
+                "name": "unit_price",
+                "type": "decimal",
+                "precision": 18,
+                "scale": 2
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "Products"
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

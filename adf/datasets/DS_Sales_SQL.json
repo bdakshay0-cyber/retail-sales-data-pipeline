@@ -1,0 +1,62 @@
+{
+    "name": "DS_Sales_SQL",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "LS_AzureSQL_Retail",
+            "type": "LinkedServiceReference"
+        },
+        "parameters": {
+            "p_TableName": {
+                "type": "string",
+                "defaultValue": "@dataset().p_TableName"
+            }
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "sales_id",
+                "type": "bigint",
+                "precision": 19
+            },
+            {
+                "name": "order_date",
+                "type": "date"
+            },
+            {
+                "name": "customer_id",
+                "type": "varchar"
+            },
+            {
+                "name": "product_id",
+                "type": "varchar"
+            },
+            {
+                "name": "store_id",
+                "type": "varchar"
+            },
+            {
+                "name": "quantity",
+                "type": "int",
+                "precision": 10
+            },
+            {
+                "name": "unit_price",
+                "type": "decimal",
+                "precision": 18,
+                "scale": 2
+            },
+            {
+                "name": "discount",
+                "type": "decimal",
+                "precision": 5,
+                "scale": 2
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "Sales"
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}

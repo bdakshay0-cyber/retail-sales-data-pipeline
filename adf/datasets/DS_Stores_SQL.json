@@ -1,0 +1,44 @@
+{
+    "name": "DS_Stores_SQL",
+    "properties": {
+        "linkedServiceName": {
+            "referenceName": "LS_AzureSQL_Retail",
+            "type": "LinkedServiceReference"
+        },
+        "parameters": {
+            "p_TableName": {
+                "type": "string",
+                "defaultValue": "@dataset().p_TableName"
+            }
+        },
+        "annotations": [],
+        "type": "AzureSqlTable",
+        "schema": [
+            {
+                "name": "store_id",
+                "type": "varchar"
+            },
+            {
+                "name": "store_name",
+                "type": "varchar"
+            },
+            {
+                "name": "city",
+                "type": "varchar"
+            },
+            {
+                "name": "state",
+                "type": "varchar"
+            },
+            {
+                "name": "region",
+                "type": "varchar"
+            }
+        ],
+        "typeProperties": {
+            "schema": "dbo",
+            "table": "Stores"
+        }
+    },
+    "type": "Microsoft.DataFactory/factories/datasets"
+}
